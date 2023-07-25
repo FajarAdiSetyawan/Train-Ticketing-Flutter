@@ -33,4 +33,9 @@ class HomeController extends GetxController {
   }
 
   RxBool switchPP = false.obs;
+
+  RxMap<String, dynamic> title = <String, dynamic>{
+    "departure": "Gambir",
+    "destination": "Solo Balapan",
+  }.obs;
 }

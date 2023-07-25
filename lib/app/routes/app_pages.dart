@@ -29,7 +29,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SELECT_TRAIN,
-      page: () => const SelectTrainView(),
+      page: () => SelectTrainView(),
       binding: SelectTrainBinding(),
     ),
     GetPage(
