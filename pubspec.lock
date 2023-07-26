@@ -81,14 +81,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
-  date_picker_timeline:
+  easy_date_timeline:
     dependency: "direct main"
     description:
-      name: date_picker_timeline
-      sha256: dc754de3a99ad654c5633072cb9edac27e0b2875c81c7286e8c6cf419082a110
+      name: easy_date_timeline
+      sha256: cc36908d57d2772020f157971ec904e0512a9b67f9f5d13fa94c258c6772bd2a
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.5"
+    version: "0.0.6"
   fake_async:
     dependency: transitive
     description:
