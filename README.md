@@ -1,6 +1,7 @@
-# train_ticketing
+# Train Ticketing
 
-A new Flutter project.
+Package Use
+GetX Pattern (by Kauê)
 
 ## Getting Started
 
