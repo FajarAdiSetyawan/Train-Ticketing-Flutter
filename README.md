@@ -1,17 +1,27 @@
 # Train Ticketing
 
-Package Use
-GetX Pattern (by Kauê)
+## Sliceing Design from Figma [By fafaaye](https://www.figma.com/community/file/885208153538485987/Train-Ticketing-App-UI).
 
-## Getting Started
+#### Package Used
+* Uses [GetX Pattern](https://pub.dev/packages/get) for architecture pattern.
+* Uses [Easy Date Timeline](https://pub.dev/packages/easy_date_timeline) for date horizontal scroll.
+* Uses [intl](https://pub.dev/packages/intl) for date formater.
 
-This project is a starting point for a Flutter application.
+#### Screenshoot
+<div align="center"> 
+<table style="width:100%">
+  <tr>
+    <td align="center"><img src="ss/home.jpg" style="width:100%" align="center" </img></td>
+  </tr>
+   <tr>
+    <td align="center"><img src="ss/train.jpg" style="width:100%" align="center" </img></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="ss/detail.jpg" style="width:100%" align="center" </img></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="ss/seat.jpg" style="width:100%" align="center" </img></td>
+  </tr>
+</table>
+</div>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
