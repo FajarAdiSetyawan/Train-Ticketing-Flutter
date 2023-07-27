@@ -24,6 +24,8 @@ class SelectTrainView extends GetView<SelectTrainController> {
       appBar: AppBar(
         title: Text(titleSelectTrain), // Use the initialized titleSelectTrain here
         centerTitle: true,
+        elevation: 10,
+        surfaceTintColor: Colors.white,
       ),
       body: Stack(
         children: [
@@ -39,15 +41,28 @@ class SelectTrainView extends GetView<SelectTrainController> {
           ),
           Column(
             children: [
-              SingleChildScrollView(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    _changeTodyHighlightColorExample(),
-                    const SizedBox(
-                      height: 15.0,
+              Padding(
+                padding: const EdgeInsets.only(
+                  bottom: 10,
+                ),
+                child: SingleChildScrollView(
+                  child: Material(
+                    elevation: 4, // Nilai elevasi (jumlah bayangan) yang diinginkan
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(25),
+                      bottomRight: Radius.circular(25),
                     ),
-                  ],
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        _changeTodyHighlightColorExample(),
+                        const SizedBox(
+                          height: 15.0,
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
               Expanded(

@@ -96,7 +96,6 @@ class CardMyTicketHome extends StatelessWidget {
   }
 }
 
-
 // ignore: must_be_immutable
 class ItemCardNewsHome extends StatelessWidget {
   ItemCardNewsHome({
@@ -117,6 +116,12 @@ class ItemCardNewsHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(
+          20,
+        ),
+      ),
+      elevation: 4,
       margin: const EdgeInsets.all(10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

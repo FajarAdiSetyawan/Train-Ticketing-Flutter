@@ -104,7 +104,7 @@ class HomeView extends GetView<HomeController> {
                                     ),
                                   ),
                                   const Text(
-                                    "PWT",
+                                    "GMR",
                                     style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class HomeView extends GetView<HomeController> {
                                     ),
                                   ),
                                   Text(
-                                    "Stasiun Purwokerto",
+                                    "Stasiun Gambir",
                                     style: TextStyle(
                                       fontSize: 12,
                                       color: Colors.grey[800],
@@ -169,12 +169,18 @@ class HomeView extends GetView<HomeController> {
                                       color: Colors.blue[600], // bluePrimary harus merupakan Color atau variabel yang telah didefinisikan sebelumnya
                                     ),
                                   ),
-                                  const Text(
-                                    "Rabu, 12 Agustus 2023",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: greyBluePrimary,
+                                  GestureDetector(
+                                    onTap: () => controller.selectDate(context),
+                                    child: Obx(
+                                      () => Text(
+                                        controller.selectDateFormat(),
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                          color: greyBluePrimary,
+                                          fontFamily: 'Jakarta',
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
@@ -38,4 +39,39 @@ class HomeController extends GetxController {
     "departure": "Gambir",
     "destination": "Solo Balapan",
   }.obs;
+
+  var selectedDate = DateTime.now().obs;
+
+  String selectDateFormat() {
+    final format = DateFormat('dd MMM yyyy');
+    return format.format(selectedDate.value);
+  }
+
+  void selectDate(BuildContext context) async {
+    DateTime currentDate = DateTime.now();
+    DateTime maxDate = currentDate.add(const Duration(days: 60));
+    DateTime minDate = currentDate.subtract(const Duration(days: 30));
+
+    final DateTime? pickedDate = await showDatePicker(
+      context: context,
+      initialDate: selectedDate.value,
+      firstDate: minDate,
+      lastDate: maxDate,
+      // locale: Locale(_languageCode),
+      builder: (BuildContext context, Widget? child) {
+        return Theme(
+          data: ThemeData.light().copyWith(
+            primaryColor: Colors.blue,
+            colorScheme: const ColorScheme.light(primary: Colors.blue),
+            buttonTheme: const ButtonThemeData(textTheme: ButtonTextTheme.primary),
+          ),
+          child: child!,
+        );
+      },
+    );
+
+    if (pickedDate != null && pickedDate != selectedDate.value) {
+      selectedDate.value = pickedDate;
+    }
+  }
 }
