@@ -11,6 +11,9 @@
 <div align="center"> 
 <table style="width:100%">
   <tr>
+    <td align="center"><img src="ss/sample.gif" style="width:100%" align="center"/></td>
+  </tr>
+  <tr>
     <td align="center"><img src="ss/home.jpg" style="width:100%" align="center" </img></td>
   </tr>
    <tr>
